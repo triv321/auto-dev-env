@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # Project 1.3: Environment Setup Script
-# This script automates the installation of standard development tools
-# on a fresh Ubuntu/Debian-based system.
+# This script automates the installation of standard development tools on a fresh Ubuntu/Debian-based system.
 
 echo "--- Starting Environment Setup ---"
 
@@ -12,8 +11,8 @@ sudo apt-get update -y
 
 # --- Install Essential Tools ---
 
-# Install git
-# We check if the command 'git' exists before trying to install it.
+# Install git (or check if it exists already)
+
 if ! command -v git &> /dev/null
 then
     echo "Installing git..."

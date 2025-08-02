@@ -1,15 +1,10 @@
 #!/bin/bash
 
 # Project 1.3: Environment Setup Script
-# This script automates the installation of standard development tools on a fresh Ubuntu/Debian-based system.
-
 echo "--- Starting Environment Setup ---"
 
-# Update the package list to get the latest versions
 echo "Updating package list..."
 sudo apt-get update -y
-
-# --- Install Essential Tools ---
 
 # Install git (or check if it exists already)
 
@@ -30,7 +25,7 @@ else
     echo "python3 is already installed."
 fi
 
-# Install htop (a useful process viewer)
+# Install htop 
 if ! command -v htop &> /dev/null
 then
     echo "Installing htop..."

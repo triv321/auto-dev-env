@@ -1,4 +1,4 @@
-# Project 1.3: Automated Development Environment Setup Script
+# Project: Automated Development Environment Setup Script
 
 > An idempotent Bash script to automate the provisioning of a standard development environment on a fresh Ubuntu/Debian-based system.
 
@@ -57,4 +57,5 @@ The script follows a safe and logical sequence to provision the environment:
 3.  **Conditional Installation:** If a tool is not found, the script prints a message and then runs `sudo apt-get install -y <package_name>`. The `-y` flag automatically answers "yes" to any confirmation prompts, allowing the script to run without user interaction. If the tool is already present, the script simply prints a confirmation message and moves on.
 
 This check-then-install pattern is what makes the script **idempotent**—a core principle in infrastructure automation.
+
 
